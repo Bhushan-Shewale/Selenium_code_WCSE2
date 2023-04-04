@@ -23,7 +23,7 @@ public class MouseHoverAction {
 		driver.findElement(By.id("denyBtn")).click();
 		WebElement target = driver.findElement(By.xpath("//a[contains(text(),'Watch Jewellery ')]"));
 
-		// WE ARE CREATE OBJECT FOR ACTION FOR ACTION CLASS
+		// WE ARE CREATE OBJECT FOR ACTION CLASS
 
 		Actions act = new Actions(driver);
 		//WE PERFORM MOUSE HOVER ACTION 

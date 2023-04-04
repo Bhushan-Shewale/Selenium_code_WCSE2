@@ -1,15 +1,22 @@
 package xpathLocator;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Case1XpathByUsingUniqueAttributeActitime {
 
+	static WebDriver driver;
 	public static void main(String[] args)throws InterruptedException { 
-		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		
+		ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(co);
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		driver.get("http://bhushan-shewale/login.do");
 		Thread.sleep(2000);

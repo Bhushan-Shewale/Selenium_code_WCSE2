@@ -2,13 +2,16 @@ package methodsOfWebDriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class GetTitle {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		
+		ChromeOptions co = new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+		WebDriver driver=new ChromeDriver(co);
 		driver.manage().window().maximize();
 		
 		driver.get("https://www.instagram.com/");

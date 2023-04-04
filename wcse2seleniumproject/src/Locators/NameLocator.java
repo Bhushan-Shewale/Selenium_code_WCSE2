@@ -26,5 +26,4 @@ public class NameLocator {
 		driver.close();
 
 	}
-
 }
