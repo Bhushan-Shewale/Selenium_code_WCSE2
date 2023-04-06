@@ -27,7 +27,7 @@ public class GetTitle {
 		driver1.get("https://www.instagram.com/");
 		String titleOfLoginPage1=driver1.getTitle();
 		System.out.println(titleOfLoginPage1);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		driver.close();
 	}
 }

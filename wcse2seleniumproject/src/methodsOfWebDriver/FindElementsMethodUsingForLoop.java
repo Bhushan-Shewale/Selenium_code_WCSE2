@@ -19,8 +19,8 @@ public class FindElementsMethodUsingForLoop {
 		
 		driver.get("https://www.google.com/");
 		driver.switchTo().activeElement().sendKeys("iphone");
-		
 		Thread.sleep(2000);
+		
 		List<WebElement> options = driver.findElements(By.xpath("//div[@class='wM6W7d']"));
 		
 		for(int i=0;i<options.size();i++)

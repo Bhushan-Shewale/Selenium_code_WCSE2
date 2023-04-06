@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class GetCurrentUrlMethod {
 
 	public static void main(String[] args) throws InterruptedException {
+		
 		ChromeOptions co = new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
 		WebDriver driver = new ChromeDriver(co);
