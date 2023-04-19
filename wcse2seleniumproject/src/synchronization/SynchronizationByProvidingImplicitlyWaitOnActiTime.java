@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class SynchronizationByProvidingImplicitlyWaitOnActiTime {
 
 	static WebDriver driver;
+
 	public static void main(String[] args) {
 
 		ChromeOptions co = new ChromeOptions();
